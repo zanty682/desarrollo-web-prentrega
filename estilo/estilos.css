@@ -1,106 +1,916 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Ubuntu", system-ui;
 }
-h1{
+
+.im_logo {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 2200px;
+    height: 800px;
     padding: 50px;
-    margin-left: 30px;
-
-    
-}
-nav{
-    background-color: rgb(104, 212, 255);
-    padding-block: 10px;
-
-}
-    
-li{
-    display: inline-block;
-    margin: 10px ;
-    
-}
- a{
-   color: rgb(0, 0, 0);
-   text-decoration: none;
-   padding: 10px;
 }
 
-.active a{
+
+nav {
+    height: 80px;
+    display: flex;
+    background-color: skyblue;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+
+}
+
+ul {
+    list-style-type: none;
+    gap: 10px;
+    grid-gap: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+li a {
+    color: rgb(20, 6, 6);
+    margin: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    border: 2px;
+    transition: all 0.5s;
+}
+
+li a:hover {
+    background-color: rgb(10, 111, 243);
+    border-radius: 5px;
+    background: linear-gradient(rgb(40, 136, 245), 70%, rgba(255, 255, 255, 0.87));
+
+
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.active a {
     text-decoration: underline double;
 }
-h2{
+
+h2 {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 10px ;
-    margin: 10px ;
-    font-size: 25px;
-    
+    padding: 10px;
+    margin: 10px;
+    font-size: 30px;
+
 }
 
-.messifoto1{
-    border-radius: 25%;
-    padding:10px ;
-    
+.jefe {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
-.texto1{
-    text-align: center;
-    padding: 10px ;
-    margin: 10px ;
-}
-h3{
-    text-align: center;
-    font-size: 25px;
-    padding: 10px ;
-}
-main{
- padding: 40px;
-    
-}
- 
-.carta{
-    width: 28%;
-    background-color: rgb(178, 209, 230);
-    border-radius: 15px;
-    display: inline-block;
-    margin-inline: 20px;
-    
-    
-}
-.cartaimagen{
-    width: 100%; 
+
+.messifoto1 {
+    border-radius: 30%;
     padding: 10px;
     height: 100%;
-     
+
+
+
 }
-.cartaparrafo{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16x;
+
+
+.texto1 {
+    margin: 10px;
+    font-size: 25px;
+
+
+}
+
+
+h3 {
     text-align: center;
-    padding:10px;
+    font-size: 30px;
+    padding: 10px;
 }
-.cartaboton{
-    background-color: rgb(199, 25, 77);
-    font-size: 18px;
+
+.degrade {
+    padding: 40px;
+    background: linear-gradient(rgb(40, 136, 245), 10%, rgba(255, 255, 255, 0.87));
+
+}
+
+.final_grilla {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: url(/imagenes/a5ea39f887c86fffdc7c9244202c0087.jpg);
+
+}
+
+.carta {
+    background-color: rgb(62, 172, 245);
+    margin: 40px;
+    padding: 20px;
+    height: 100%;
+    width: 80%;
+    border-radius: 20px;
+}
+
+.cartaimagen {
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+    border-radius: 20px;
+
+}
+
+
+.cartaparrafo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+}
+
+.parrafo2 {
+    font-size: 17px;
+    text-align: center;
+
+}
+
+
+.cartaboton {
+    background-color: rgb(238, 71, 121);
+    font-size: 20px;
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
+
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    height: 40px;
+
+}
+
+.icono {
+    color: white;
+
+}
+
+.tex_footer {
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+
+
+
+/* scc de biografia*/
+
+.titulo_bio {
+    width: auto;
+    margin: 50px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    font-size: 30px;
+    background: linear-gradient(rgb(40, 136, 245), 10%, rgba(255, 255, 255, 0.87))
+}
+
+.flex_1 {
+    background-color: rgb(41, 35, 35);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.p1 {
+    color: rgb(252, 238, 238);
+    margin: 10px;
+    padding: 10px;
+    font-family: "Inter", sans-serif;
+    width: 75%;
+
+}
+
+.img_2 {
+    padding: 10px;
+}
+
+.flex_2 {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo_2 {
+    font-size: 70px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 30px;
+}
+
+.p2 {
+    color: rgb(255, 255, 255);
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 590;
+    text-align: center;
+
+
+}
+
+.texto_barcelona {
+    background-color: rgb(231, 127, 144);
+    margin: 20px;
+    border: solid black 10px;
+
+}
+
+.flex_3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo_3 {
+    width: max-content;
+    margin: 10px;
+    background-color: rgb(112, 210, 248);
+    border-radius: 10px;
+
+
+}
+
+.texto_sele {
+    padding: 5px;
+    background: rgb(238, 238, 238);
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.img_4 {
+    width: max-content;
+    padding: 10px;
+}
+
+.flex_4 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+
+.img_5 {
+    width: 100%;
+    height: 100%;
+    padding-right: 10px;
+}
+
+.img_6 {
+    width: 50%;
+    height: 100%;
+
+}
+
+.tex_balondeoro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+
+.titulo_4 {
+    background: linear-gradient(70deg, pink 70%, white 30%);
+    font-size: 50px;
+    text-align: start;
+    padding-left: 40px;
+    width: 100%;
+}
+
+.titulo_5 {
+    background: linear-gradient(70deg, black 70%, white 30%);
+    color: pink;
+    width: 100%;
+    font-size: 50px;
+
+}
+
+.p4 {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+/*css de palmares*/
+.grilla_padre {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "hijo1 hijo2 hijo3 hijo4"
+        ". hijo5 hijo6 .";
+    height: 100vh;
+    justify-content: center;
+    background-color: rgb(253, 102, 102);
+
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lista li {
+    font-size: 20px;
+}
+
+
+
+.hijo_1 {
+    grid-area: hijo1;
+    text-align: center;
+
+
+}
+
+.hijo_2 {
+    grid-area: hijo2;
+    text-align: center;
+}
+
+.hijo_3 {
+    grid-area: hijo3;
+    text-align: center;
+}
+
+.hijo_4 {
+    grid-area: hijo4;
+    text-align: center;
+}
+
+.hijo_5 {
+    grid-area: hijo5;
+    text-align: center;
+}
+
+.hijo_6 {
+    grid-area: hijo6;
+    text-align: center;
+}
+
+.titulo_palmares {
+    font-size: 30px;
+    font-weight: 500;
+
+
+}
+
+.titulo_barsa {
+    height: 100px;
+
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 100px;
+    font-size: 40px;
+    background: linear-gradient(rgb(40, 136, 245), 10%, rgba(255, 255, 255, 0.87));
+
+}
+
+.grilla_padre2 {
+    display: grid;
+    background-color: rgb(69, 69, 194);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "a1 a2 . ."
+        ". . . . ";
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.hijo1_padre2 {
+    grid-area: a1;
+    text-align: center;
+
+    height: 70%;
+
+}
+
+.hijo2_padre2 {
+    grid-area: a2;
+    height: 70%;
+
+
+}
+
+.img_liga1 {
+    height: 300px;
+    width: 300px;
+}
+
+.titulo_psg {
+    border-top: solid black 5px;
+    border-bottom: solid black 5px;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.grilla_padre3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "mls . . ."
+        ". . . .";
+    background-color: rgb(203, 209, 203);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.hijo1_padre3 {
+    grid-area: mls;
+    text-align: center;
+}
+
+.img_mls {
+    height: 200px;
+}
+
+.titulo_mls {
+    margin: 20px;
+    border-top: solid rgb(255, 180, 193) 5px;
+    border-bottom: solid rgb(255, 180, 193) 5px;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 5000;
+
+}
+
+.grilla_padre4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "copa1 copa2 copa3 copa4"
+        "copa5 . . .";
+    background-color: skyblue;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.grilla1_padre4 {
+    grid-area: copa1;
+    text-align: center;
+
+
+}
+
+.grilla2_padre4 {
+    grid-area: copa2;
+    text-align: center;
+
+}
+
+.grilla3_padre4 {
+    grid-area: copa3;
+    text-align: center;
+
+}
+
+.grilla4_padre4 {
+    grid-area: copa4;
+    text-align: center;
+
+}
+
+.grilla5_padre4 {
+    grid-area: copa5;
+    text-align: center;
+
+}
+
+.titulo_sele {
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+    border-top: solid skyblue 5px;
+    border-bottom: solid skyblue 5px;
+
+}
+
+.grilla_padre5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "t1 t2 t3 t4"
+        "t5 t6 t7 t8"
+        "t9 t10 t11 t12"
+        "t13 t14 t15 .";
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.titulo_final {
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+    border-top: solid rgb(241, 241, 32) 5px;
+    border-bottom: solid rgb(241, 241, 32) 5px;
+    ;
+}
+
+.hijo1_padre5 {
+    grid-area: t1;
+    text-align: center;
+}
+
+.hijo2_padre5 {
+    grid-area: t2;
+    text-align: center;
+}
+
+.hijo3_padre5 {
+    grid-area: t3;
+    text-align: center;
+}
+
+.hijo4_padre5 {
+    grid-area: t4;
+    text-align: center;
+}
+
+.hijo5_padre5 {
+    grid-area: t5;
+    text-align: center;
+}
+
+.hijo6_padre5 {
+    grid-area: t6;
+    text-align: center;
+}
+
+.hijo7_padre5 {
+    grid-area: t7;
+    text-align: center;
+}
+
+.hijo8_padre5 {
+    grid-area: t8;
+    text-align: center;
+}
+
+.hijo9_padre5 {
+    grid-area: t9;
+    text-align: center;
+}
+
+.hijo10_padre5 {
+    grid-area: t10;
+    text-align: center;
+}
+
+.hijo11_padre5 {
+    grid-area: t11;
+    text-align: center;
+}
+
+.hijo12_padre5 {
+    grid-area: t12;
+    text-align: center;
+}
+
+.hijo13_padre5 {
+    grid-area: t13;
+    text-align: center;
+}
+
+.hijo14_padre5 {
+    grid-area: t14;
+    text-align: center;
+}
+
+.hijo15_padre5 {
+    grid-area: t15;
+    text-align: center;
+}
+
+/* css de noticias*/
+
+
+.grilla_noticias {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "noti1 noti2 noti3"
+        "noti1 noti4 noti5";
+    background-color: black;
+    gap: 5px;
+
+}
+
+.hijo1_noticias {
+    grid-area: noti1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.hijo2_noticias {
+    grid-area: noti2;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hijo3_noticias {
+    grid-area: noti3;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+.hijo4_noticias {
+    grid-area: noti4;
+}
+
+.hijo5_noticias {
+    grid-area: noti5;
+}
+
+.img_noti {
+    width: 100%;
+    height: 50%;
+}
+
+.cabeza {
+    height: 50px;
+}
+
+.titulo_noti {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.titulo_noti3 {
+    text-align: center;
+    color: white;
+}
+
+.p_noti {
+    color: rgb(250, 154, 170);
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+
+}
+
+/*css de rueda de prenmsa*/
+
+
+    
+
+
+.carta_grilla{
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "car1 car2 car3"
+    "car4 car5 car6"
+    "car7 car8 car9";
+    padding-top:50px ;
+    margin: 20px;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
     
 }
-.final{
-    background-image: url(/imagenes/a5ea39f887c86fffdc7c9244202c0087.jpg);
+.carta1{ 
+    grid-area: car1;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+
 }
-.piedepagina{
-    background-color: rgb(83, 88, 88);
-    height: 60px;
+.carta2{
+    grid-area: car2;
+    background-color: rgb(245, 160, 174);
+    border-radius: 8px;
+    text-align: center;
 }
-.lista{
-    font-size: 14px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.carta3{
+    grid-area: car3;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+
+}
+.carta4{
+    grid-area: car4;
+    background-color: rgb(245, 160, 174);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.carta5{
+    grid-area: car5;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+
+}
+.carta6{
+    grid-area: car6;
+    background-color: rgb(245, 160, 174);
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+.carta7{
+    grid-area: car7;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+
+}
+.carta8{
+    grid-area: car8;
+    background-color: rgb(245, 160, 174);
+    border-radius: 8px;
+    text-align: center;
+}
+.carta9{
+    grid-area: car9;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+
+}
+.carta_prensa{
+    width: 100%;
+    height: 50%;
+    border-radius: 8px 8px 0 0;
+}
+.carta_boton1{
+    background-color: rgb(253, 154, 171);
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+
+}
+.carta_boton2{
+    background-color: black;
+    color: white;
+    font-size:20px ;
+    padding: 5px 10px 5px 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.carta_parrafo1{
+    color: rgb(252, 161, 176);
+    font-size: 30px;
+    font-family:inherit;
+    font-weight: 500;
+    margin: 10px;
+
+}
+.carta_parrafo2{
+    color: white;
+    font-size: 30px;
+    font-family: inherit;
+    font-weight: 500;
+    margin: 10px;
+
+}
+
+@media screen and (max-width: 480px){
+    header{
+        height: 20%;
+    }
+    
+    
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        height: 30%;
+    }
+    ul{
+        
+        flex-direction: column;
+        align-items: center;
+    }
+    .grilla_noticias{ 
+        height: 100%;
+        padding-top: 180px;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "noti1"
+        "noti2"
+        "noti3"
+        "noti4"
+        "noti5";
+        
+    }
+    .footer{
+        width: 100%;
+    }
+    .p_noti{
+        font-size: 15px;
+    }
+    .carta_grilla{
+        margin: 0;
+        padding-top: 180px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr ;
+        grid-template-areas: 
+        "car1 "
+        "car2 "
+        "car3"
+        "car4 "
+        "car5 "
+        "car6"
+        "car7 "
+        "car8 "
+        "car9";
+     }
+     .carta_parrafo1{
+        font-size: 2px;
+
+     }
+     .carta_parrafo2{
+        font-size: 20px;
+
+     }
+     .carta_grilla{
+        column-gap: 10px;
+     }
+    
+
+    
 
     
 }
-
-
-
